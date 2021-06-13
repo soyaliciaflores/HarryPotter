@@ -1,28 +1,31 @@
 import React, {useState, useEffect} from 'react';
 import axios from 'axios'
-
+import { useDispatch, useSelector } from 'react-redux';
+import Store from './Store'
+import { setCharacters } from './Actions';
 
 const Cards = () =>{
+    const characters = useSelector((state) =>state)
+    // const [dbCharacters, setDbCharacters] = useState();
+    const dispatch = useDispatch()
 
-    const [dbCharacters, setDbCharacters] = useState();
-    
     const peticionCharacters = async() =>{
         await axios.get('http://localhost:5000/characters')
         .then(response =>{
-            const characters = response.data;
-            setDbCharacters(characters)
+            dispatch(setCharacters(response.data))
             })
         }
     
     useEffect(() =>{
-        peticionCharacters();
-        
-    })
+        peticionCharacters();  
+    });
+
+    console.log(characters)
 
     return(
         <div>
 
-            {dbCharacters && dbCharacters.map((item)=>(
+            {/* {dbCharacters && dbCharacters.map((item)=>(
                 <div>
                 <img src={item.image} alt=''/>
                 <p>{item.alive === true ? 'vivo' : 'muerto'}</p>
@@ -33,7 +36,7 @@ const Cards = () =>{
                 <p>Color de ojos:{item.eyeColour}</p>
                 <p>Color de pelo:{item.hairColour}</p>
                 </div>
-            ))}
+            ))} */}
             
            
         </div>
