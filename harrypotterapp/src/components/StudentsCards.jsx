@@ -16,7 +16,7 @@ const StudentsCards = () =>{
     useEffect(() =>{
         peticionStudents(); 
     })
-    console.log(students)
+    // console.log(students)
     
     return(
         <div>
