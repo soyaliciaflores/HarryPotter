@@ -1,3 +1,5 @@
 export const ActionTypes = {
   SET_CHARACTERS: "SET_CHARACTERS",
+  SET_STAFF: "SET_STAFF",
+  SET_STUDENTS: "SET_STUDENTS",
 };

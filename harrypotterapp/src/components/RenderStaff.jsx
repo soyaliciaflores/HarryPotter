@@ -1,10 +1,10 @@
 import React from 'react';
 import { useSelector } from "react-redux";
 
-const CharacterComponent = () =>{
-    const characters = useSelector((state) => state.characters);
-    const renderList = characters.map((character) =>{
-        const {name, image, alive, dateOfBirth, gender, eyeColour, hairColour} = character;
+const StaffComponent = () =>{
+    const staff = useSelector((state) => state.staff);
+    const renderList = staff.map((item) =>{
+        const {name, image, alive, dateOfBirth, gender, eyeColour, hairColour} = item;
         return(
             <div>
                 <div>
@@ -26,4 +26,4 @@ const CharacterComponent = () =>{
     )
     
 }
-export default CharacterComponent
+export default StaffComponent
