@@ -6,9 +6,11 @@ const CharacterComponent = () =>{
     const renderList = characters.map((character) =>{
         const {name, image, alive, dateOfBirth, gender, eyeColour, hairColour} = character;
         return(
-            <div>
-                <div>
+            <div className='container-card'>
+               <div className='image-card'>
                <img src={image} alt=''/>
+               </div>
+               <div>
                <p>{alive === true ? 'vivo' : 'muerto'}</p>
                <p>{name }</p>
                <h2>{name}</h2>
@@ -17,7 +19,6 @@ const CharacterComponent = () =>{
                <p>Color de ojos:{eyeColour}</p>
                <p>Color de pelo:{hairColour}</p>
                </div>
-               <button>Agregar a favoritos</button>
             </div>
             )
     })

@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import { Provider } from "react-redux";
 import Store from "./components/Store";
 import Filter from "./components/Filter";
+import "./Styles/Styles.scss";
 
 const App = () => (
   <Provider store={Store}>

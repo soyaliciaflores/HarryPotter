@@ -28,8 +28,8 @@ const Filter = () => {
           <Cards /> 
           <StudentsCards /> 
           <StaffCards /> 
-      <button onClick={showStudents}>Students</button>
-      <button onClick={showStaff}>Staff</button>
+      <button className='filter-btn' onClick={showStudents}>Students</button>
+      <button className='filter-btn' onClick={showStaff}>Staff</button>
       {theCards === true ? <AllCards />: "desaparecierons todas"}
       {theStudents === true ? <RenderStudents /> : "desaparecieron estudiantes"}
       {theStaff === true ? <RenderStaff />: "desapareció staff"}
