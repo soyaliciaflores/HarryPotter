@@ -1,0 +1,60 @@
+@media (max-width: 580px) {
+  .container-cards {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+  }
+  .cards {
+    display: flex;
+    border-radius: 8px;
+    box-shadow: 0px 4px 4px rgba(255, 255, 255, 0.242);
+    width: 30vh;
+    flex-direction: column;
+    background: white;
+    margin: 4vh;
+  }
+  .container-photo {
+    position: relative;
+    width: 24vh;
+    height: 24vh;
+    overflow: hidden;
+    border-radius: 50%;
+  }
+  .photo {
+    width: 100%;
+    height: auto;
+  }
+  .gryffindor {
+    @include cardbasicmobile(
+      radial-gradient(circle at top left, #f05053 80%, #e1eec3)
+    );
+  }
+  .ravenclaw {
+    @include cardbasicmobile(
+      radial-gradient(circle at top left, #000046, #1cb5e0)
+    );
+  }
+  .slytherin {
+    @include cardbasicmobile(
+      radial-gradient(circle at top left, #02702c, #b9f3b7)
+    );
+  }
+  .hufflepuff {
+    @include cardbasicmobile(
+      radial-gradient(circle at top left, #bda703, #f3eeb7)
+    );
+  }
+  .information {
+    padding-left: 4vh;
+  }
+  .container-hidden {
+    display: none;
+  }
+  .order-card {
+    order: 2;
+  }
+  .order-name {
+    order: 1;
+  }
+}

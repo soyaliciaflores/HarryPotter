@@ -20,19 +20,30 @@ const Cards = () =>{
     })
 
     return(
-        <div>
+        <div className='container-cards'>
 
             {dbCharacters && dbCharacters.map((item)=>(
-                <div>
-                <img src={item.image} alt=''/>
-                <p>{item.alive === true ? 'vivo' : 'muerto'}</p>
-                <p>{item.name }</p>
-                <h2>{item.name}</h2>
-                <p>Cumpleaños:{item.dateOfBirth}</p>
-                <p>Género:{item.gender}</p>
-                <p>Color de ojos:{item.eyeColour}</p>
-                <p>Color de pelo:{item.hairColour}</p>
-                </div>
+                 <div className='cards'>
+                 <div className={item.house === 'Ravenclaw' ? 'ravenclaw' 
+                      : item.house === 'Slytherin' ? 'slytherin' 
+                      : item.house === 'Hufflepuff' ? 'hufflepuff' : 'gryffindor' }>
+                 <div className='container-photo'>
+             <img src={item.image} className='photo' alt=''/>
+             </div>
+             </div>
+             <div className='information'>
+                 <div className='order-card'>
+             <p align='left'>{item.alive === true ? 'VIVO': 'MUERTO'}</p>
+                  </div>
+             <h1 classname='order-name'>{item.name}</h1>
+             <div className='container-hidden'>
+             <p>Cumpleaños:{' ' + item.dateOfBirth}</p>
+             <p>Género:{' ' + item.gender}</p>
+             <p>Color de ojos:{' ' + item.eyeColour}</p>
+             <p>Color de pelo:{' ' + item.hairColour}</p>
+             </div>
+             </div>
+             </div>
             ))}
             
            

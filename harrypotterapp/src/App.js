@@ -2,6 +2,8 @@ import React, { useState, useEffect } from "react";
 import Cards from "./components/Cards";
 import Students from "./components/Students";
 import Staff from "./components/Staff";
+import "./components/styles/styles.scss";
+import logo from "./assets/logo.png";
 
 function App() {
   const [theCards, setTheCards] = useState(true);
@@ -20,17 +22,24 @@ function App() {
     setTheStudents(false);
   };
 
-  // useEffect(() => {
-  //   showStudents();
-  // });
-
   return (
     <div>
-      <button onClick={showStudents}>Students</button>
-      <button onClick={showStaff}>Staff</button>
-      {theCards === true ? <Cards /> : "desaparecierons todas"}
-      {theStudents === true ? <Students /> : "desaparecieron estudiantes"}
-      {theStaff === true ? <Staff /> : "desapareció staff"}
+      <div className="header">
+        <img className="logo" src={logo} alt="Logo Harry Potter" />
+        <h2>Selecciona tu filtro</h2>
+      </div>
+      <div className="container-button">
+        <button className="btn-filter" onClick={showStudents}>
+          ESTUDIANTES
+        </button>
+        <button className="btn-filter" onClick={showStaff}>
+          STAFF
+        </button>
+      </div>
+
+      {theCards === true ? <Cards /> : " "}
+      {theStudents === true ? <Students /> : " "}
+      {theStaff === true ? <Staff /> : " "}
     </div>
   );
 }

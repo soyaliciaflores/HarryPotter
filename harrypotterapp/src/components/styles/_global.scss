@@ -1,0 +1,59 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito&display=swap");
+
+html {
+  font-size: 62.5%;
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+  font-family: "Nunito", sans-serif;
+  background: url(../../assets/fondo.jpeg) no-repeat center top;
+  background-attachment: fixed;
+  background-size: cover;
+}
+$font-p: 1.8rem;
+$font-h1: 3rem;
+$font-h2: 2.4rem;
+$font-h3: 2rem;
+p {
+  font-size: $font-p;
+}
+h1 {
+  font-size: $font-h1;
+}
+h2 {
+  font-size: $font-h2;
+  color: black;
+}
+h3 {
+  font-size: $font-h3;
+}
+
+@mixin cardbasic($degradado) {
+  display: flex;
+  background: $degradado;
+  border-radius: 8px 0 0 8px;
+  width: 32vh;
+  justify-content: center;
+  align-items: center;
+  font-size: medium;
+  heigth: 12vh;
+}
+@mixin cardbasicmobile($degradadomobile) {
+  display: flex;
+  background: $degradadomobile;
+  border-radius: 8px 8px 0 0px;
+  width: 30vh;
+  justify-content: center;
+  align-items: center;
+  font-size: medium;
+}
