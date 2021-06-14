@@ -1,70 +1,23 @@
-# Getting Started with Create React App
+### Experiencia
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Enfrentarme a este proyecto, ha sido un reto para mi por muchas cuestiones, sobre todo porque desde el inicio sabía que estaba por entrar en un terreno un poco desconocido, pero no por ello emocionante.
+Si bien, ya había trabajado con react, era la primera vez que tenía un acercamiento a redux. De hecho, redux esta en la prioridad de mi lista de tecnologías que estudiaré, pero en esta ocasión me tocó meterle acelerador a ese pendiente.
 
-## Available Scripts
+#### Proceso
 
-In the project directory, you can run:
+Dentro de este proceso, pasaron muchas cosas en mi código y tuve que tomar algunas decisiones en el camino.
+Inicié levantando el servidor para consumir la API, logré muy rapido imprimir la información en pantalla y hacer la funcionalidad de los botones; sin embargo, después de ello, inicié con el gran nudo que representaba redux y aunque con avance muy lento, logré extraer la data desde la API y renderizarla en pantalla (sin estilos), también logré hacer la funcionalidad de los botones de filtrado, sin embargo, cuando inicié a darle estilo a esa funcionalidad (usando la lógica de redux), me di cuenta que aunque mi codigo renderizaba, era muy lento al cargar.
+El tiempo de entrega se agotaba, por lo que tomé la decisión de continuar darle estilos a lo que había logrado con react puro (afortunadamente ese avance lo tenía en una rama).
+Asi que me cambié de rama y enfocandome en entregar un MVP, le puse estilos a lo que ya tenía resuelto, por lo que, en la rama master, se encuentra mi MVP, y en la rama favoritos el avance que logré con redux (donde logro consumir la api y renderizarla en pantalla).
 
-### `yarn start`
+#### Arrancar el proyecto
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+El MVP esta en la rama master, por lo que posicionados en esa rama, se deberá levantar el servidor con el comando _npm run fake-api_, posteriormente, se deberá correr React con el comando _yarn start_.
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+#### Lo que más me gustó
 
-### `yarn test`
+Hay varias cosas que me gustaron de este proceso, la mas importante es que me permitió tener un primer acercamiento a una tecnología que quiero seguir aprendiendo y lo segundo es que me permitió detectar algunos puntos en los que debo enfocarme para mejorar y que estoy muy emocionada por hacerlo.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+#### Next steps
 
-### `yarn build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `yarn eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `yarn build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Aunque ya debo enviarlo para evaluación, seguiré trabajando en él para completarlo. Creo que seguiré teniendo mucho aprendizaje en el camino.
