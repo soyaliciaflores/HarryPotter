@@ -12,12 +12,18 @@ const Cards = () =>{
             const characters = response.data;
             setDbCharacters(characters)
             })
+            
         }
+
+    
     
     useEffect(() =>{
         peticionCharacters();
+       
         
     })
+
+    
 
     return(
         <div className='container-cards'>
